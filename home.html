@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/l.css" id="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="icon" href="images/icons/favicon.ico">
+    <title id="toptitle">Bro lee music ᴷᴱ | V 1.0</title>
+</head>
+
+<!--    Loading bar top     _______________-->
+<body id="body">
+    
+    <div class="loading" id="loading"></div>
+    <!-- Floating player   __________________-->
+    <div class="fp-hider">
+        <div class="f-p-p" id="fpalbum"><img src="images/albums/static/disk.png" id="albumnew"></div>
+        <div class="f-p-p" id="fpp3"><img src="images/icons/stop.png"></div>
+        <div class="f-p-p" id="fpp1"><img src="images/icons/play.png"></div>
+        <div class="f-p-p" id="fpp2"><img src="images/icons/paus.png"></div>        
+
+        <audio src="" id="audionew" ></audio> 
+    </div> 
+
+    <!--    ALBUMS PLAYER   _____________________________-->
+    <div class="albums-blur-back" id="albums-blur-back">
+        
+        <div class="albums-player-cont">
+            <div class="albums-player-title">
+                <h2 id="aptitle">Title</h2>
+
+                <div class="albums-player-close" id="albums-player-close">
+                    <div class="acb" id="acb1"></div>
+                    <div class="acb" id="acb2"></div>
+                </div>
+            </div>
+            
+            <div class="player-song-flex">
+                <div class="player-songs-flexed">
+                    <div class="float-player-songs" id="fps1" onclick="Fps1()">
+                        <P id="fpp-1">Song 001</P>
+                        <p class="hidden" id="fpph-1">Audio 1</p>
+                        <p class="hidden" id="fppa-1"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps2" onclick="Fps2()">
+                        <p id="fpp-2">Song 002</p>
+                        <p class="hidden" id="fpph-2">Audio 2</p>
+                        <p class="hidden" id="fppa-2"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps3" onclick="Fps3()">
+                        <p id="fpp-3">Song 003</p>
+                        <p class="hidden" id="fpph-3">Audio 3</p>
+                        <p class="hidden" id="fppa-3"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps4" onclick="Fps4()">
+                        <P id="fpp-4">Song 004</P>
+                        <p class="hidden" id="fpph-4">Audio 4</p>
+                        <p class="hidden" id="fppa-4"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps5" onclick="Fps5()">
+                        <p id="fpp-5">Song 005</p>
+                        <p class="hidden" id="fpph-5">Audio 5</p>
+                        <p class="hidden" id="fppa-5"></p>
+                    </div>
+                </div>
+                <div class="player-songs-flexed">
+                    <div class="float-player-songs" id="fps6" onclick="Fps6()">
+                        <P id="fpp-6">Song 006</P>
+                        <p class="hidden" id="fpph-6">Audio 6</p>
+                        <p class="hidden" id="fppa-6"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps7" onclick="Fps7()">
+                        <p id="fpp-7">Song 007</p>
+                        <p class="hidden" id="fpph-7">Audio 7</p>
+                        <p class="hidden" id="fppa-7"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps8" onclick="Fps8()">
+                        <p id="fpp-8">Song 008</p>
+                        <p class="hidden" id="fpph-8">Audio 8</p>
+                        <p class="hidden" id="fppa-8"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps9" onclick="Fps9()">
+                        <P id="fpp-9">Song 009</P>
+                        <p class="hidden" id="fpph-9">Audio 9</p>
+                        <p class="hidden" id="fppa-9"></p>
+                    </div>
+                    <div class="float-player-songs" id="fps10" onclick="Fps10()">
+                        <p id="fpp-10">Song 10</p>
+                        <p class="hidden" id="fpph-10">Audio 10</p>
+                        <p class="hidden" id="fppa-10"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="albums-player-player">
+                <div class="f-p-buttons">
+                    <div class="albums-player-album"><img src="images/albums/static/disk.png" id="albumplayeralbumart"></div>
+                    <div class="albums-player-album" id="fpb2">
+                        <div class="apbtn"><img id="apbtnp" src="images/icons/play.png" ></div>
+                        <div class="apbtn"><img id="apbtnps" src="images/icons/paus.png"></div>
+                        <div class="apbtn" ><img id="apbtns" src="images/icons/stop.png"></div>
+                        <!--    Download button -->
+                        <div class="apbtn"><a id="albumplayerdownload" href="" download=""><img src="images/icons/downloadb.png" style="height: 70%;width: 70%;margin-top: 5px;margin-left: 8px;"></a></div>
+                    </div>
+                </div>
+            </div>  
+
+        </div>   
+    </div>
+
+     <!--   NAVIGATION BAR PC  ______________________________________ -->
+    <nav>
+        <img src="images/icons/2.png" alt="logo" id="pd1"> <!--The bro lee music logo-->
+        <a href="#albums"> Albums </a>
+        <a id="videohref" href="#videos"> Videos </a>
+        <a href="#artists"> Artists </a>
+        <a href="#downloads"> Downloads </a>
+        <a href="#support"> Support Us </a>
+        <a href="#contact"> Contact Us </a>
+        <p>2023 - V.1.0</p><!--Version info to be displayed on the mobile screens-->
+     
+        <div class="navfloatr-cont">
+            <div class="navfloatr">
+                <!-- Pc Theme checkbox-->
+                <div class="checkbox-box" id="pc-theme">
+                    <div class="checkbox-wrapper-64">
+                        <label class="switch">                    
+                        <input type="checkbox" id="themes" onchange="ThemeChangeP()">
+                        <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!--    Notification icon   -->
+                <bell id="bell">
+                    <img class="icon" src="images/icons/settings.png">
+                </bell>
+
+                <!--Humbeeger menu for mobile navigation menu-->
+                <menu id="h-menu">
+                    <div class="relative">
+                        <diV class="h-1" id="h-0-b"></diV>
+                        <diV class="h-1" id="h-1-b"></diV>
+                        <diV class="h-1" id="h-1-c"></diV>
+                    </div>
+                </menu>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--       Mobile navigation    -->
+    <div class="bg-opacity" id="menu-mobile">
+        
+
+        <div class="menu-mobile" id="m-m-c">
+            
+            <div class="menu-mobile-title-bar">
+                <p style="margin-left: 20px;">Navigation</p>
+    
+                <div class="m-m-cancel" id="close-button-mobile-nav">
+                    <div class="m-m-c-1"></div>
+                    <div class="m-m-c-2"></div>
+                </div>
+            </div>
+
+
+           <a href="#albums"><div class="menu-mobile-a">
+               <img src="images/icons/album.png">
+                <div class="a-title">Albums</div>
+           </div></a>
+
+           <a href="#videos">
+            <div class="menu-mobile-a" href="">
+                <img src="images/icons/videos.png">
+                <div class="a-title">Videos</div>
+            </div>
+           </a>
+
+        <a href="#artists"><div class="menu-mobile-a" href="">
+            <img src="images/icons/artist.png">
+             <div class="a-title">Artists</div>
+        </div></a>
+
+        <a href="#downloads"><div class="menu-mobile-a" href="">
+            <img src="images/icons/download color.png">
+             <div class="a-title">Downloads</div>
+        </div></a>
+
+        <a href="#support"><div class="menu-mobile-a" href="">
+            <img src="images/icons/support.png">
+             <div class="a-title">Support Us</div>
+        </div></a>
+
+        <a href="#contact"><div class="menu-mobile-a" href="">
+            <img src="images/icons/social.png">
+             <div class="a-title">Contact Us</div>
+        </div></a>
+       
+            <!--Mobile Theme checkbox-->
+        <div class="checkbox-box-m" id="mobil-theme">
+            <div class="checkbox-wrapper-64">
+                <label class="switch">                    
+                <input type="checkbox" id="themes-mobile" onchange="ThemeChange()">
+                <span class="slider"></span>
+                </label>
+                <p>Theme switch</p>
+            </div>
+        </div> 
+        </div>       
+        
+    </div>
+
+    <!--NOTIFICATIONS       __________________________-->
+<section id="notification">               
+         
+    <div class="main-n" id="success">
+        <div class="left-n"></div>
+        <div class="right-n" id="closesuccess">
+            <div class="cross" id="cross1"></div>
+            <div class="cross" id="cross2"></div>
+        </div>
+        <div class="check-n">
+            <div class="cross" id="cross3"></div>
+            <div class="cross" id="cross4"></div>
+        </div>
+        <div class="text-n" id="success-text">
+            Success: This is a success alert!
+        </div>
+
+    </div>
+
+    <div class="main-n-e" id="error">
+        <div class="left-n-e"></div>
+        <div class="right-n-e" id="closeerror">
+            <div class="cross-e" id="cross1-e"></div>
+            <div class="cross-e" id="cross2-e"></div>
+        </div>
+        <div class="check-n-e">
+            <div class="cross-e" id="cross3-e"></div>
+            <div class="cross-e" id="cross4-e"></div>
+        </div>
+        <div class="text-n" id="error-text">
+            Erro: This is an error alert!
+        </div>
+
+    </div>
+
+    <div class="main-n-i" id="info">
+        <div class="left-n-i"></div>
+        <div class="right-n-i" id="closeinfo">
+            <div class="cross-i" id="cross1-i"></div>
+            <div class="cross-i" id="cross2-i"></div>
+        </div>
+        <div class="check-n-i">
+            <div class="cross-i" id="cross3-i"></div>
+            <div class="cross-i" id="cross4-i"></div>
+        </div>
+        <div class="text-n" id="info-text">
+            Info: This is an Info alert!
+        </div>
+
+    </div>
+
+    <div class="main-n-w" id="warning">
+        <div class="left-n-w"></div>
+        <div class="right-n-w" id="closewarning"> 
+            <div class="cross-w" id="cross1-w"></div>
+            <div class="cross-w" id="cross2-w"></div>
+        </div>
+        <div class="check-n-w">
+            <div class="cross-w" id="cross3-w"></div>
+            <div class="cross-w" id="cross4-w"></div>
+        </div>
+        <div class="text-n" id="warning-text">
+            Warning: This is a warning alert!
+        </div>
+
+    </div>
+</section>
+
+    <!--    HOME STUFF          __________________________________-->
+    <section id="home">
+        
+        <div class="bg" id="bg-home">
+            <div class="blur-back">
+                <div class="home-box" id="hb-1">
+                    
+                    <!--    Top favourite songs -->
+                    <div class="songs-box">
+                        <h1>Top Favourites</h1>
+
+                        <div class="songs-cont">
+                            <div id="songs-cont1">
+                                <div class="songs" onclick="CA1()">
+                                    <div class="songs-art">
+                                        <img src="images/albums/static/1.jpg" id="album-old1">
+                                        <div class="songs-pb">
+                                            <img src="images/icons/play.png" id="pd2">
+                                        </div>
+                                        
+                                    </div> 
+                                    <a href="audio/How beautiful Heaven must be.mp3" download="How beautiful Heaven must be.mp3">
+                                        <div class="songs-download">
+                                            <img src="images/icons/downloadb.png" id="pd8">
+                                            <p id="audio-old1" class="hidden">audio/angel band/How beautiful Heaven must be.mp3</p>
+                                        </div>
+                                    </a>
+                                    <div class="songs-title">
+                                        <p id="t1">How beautiful Heaven must be</p>
+                                    </div>
+                                    <div class="songs-sub">
+                                        <p id="s1">Bro Tumaini ● Released</p>
+                                    </div>   
+                                    <div class="songs-play-anime" id="playanime1">
+                                        <img src="images/icons/playing.gif">
+                                    </div>
+                                </div>
+
+                                <div class="songs" onclick="CA2()">
+                                    <div class="songs-art">
+                                        <img src="images/albums/static/5.jpg" id="album-old2">
+                                        <div class="songs-pb">
+                                            <img src="images/icons/play.png" id="pd3">
+                                        </div>
+                                        
+                                    </div> 
+                                    <a href="audio/There is a fountain.mp3" download="There is a fountain.mp3">
+                                        <div class="songs-download">
+                                            <img src="images/icons/downloadb.png" id="pd9">
+                                            <p id="audio-old2" class="hidden">audio/singles/There is a fountain.mp3</p>
+                                        </div>
+                                    </a>
+                                    <div class="songs-title">
+                                    <P id="t2">There is a fountain filled with blood</P> 
+                                    </div>
+                                    <div class="songs-sub">
+                                        <p id="s2">Jeanice G ● Released</p>
+                                    </div>   
+                                    <div class="songs-play-anime" id="playanime2">
+                                        <img src="images/icons/playing.gif">
+                                    </div>
+                                </div>
+
+                                <div class="songs" onclick="CA3()">
+                                    <div class="songs-art">
+                                        <img src="images/albums/static/2.jpg" id="album-old3">
+                                        <div class="songs-pb">
+                                            <img src="images/icons/play.png" id="pd4">
+                                        </div>
+                                        
+                                    </div> 
+                                    <a href="audio/A song - Mercy Worth.mp3" download="A song - Mercy Worth.mp3">
+                                        <div class="songs-download" >
+                                            <img src="images/icons/downloadb.png" id="pd10">
+                                            <p id="audio-old3" class="hidden">audio/mercy worth/A song - Mercy Worth.mp3</p>
+                                        </div>
+                                    </a>
+                                    <div class="songs-title">
+                                        <p id="t3">Alone and forsaken</p>
+                                    </div>
+                                    <div class="songs-sub">
+                                        <p id="s3">Mercy worth ● Unreleased</p>
+                                    </div>   
+                                    <div class="songs-play-anime" id="playanime3">
+                                        <img src="images/icons/playing.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="songs-cont2">
+                                <div class="songs" onclick="CA4()">
+                                    <div class="songs-art">
+                                        <img src="images/albums/static/3.jpg" id="album-old4">
+                                        <div class="songs-pb">
+                                            <img src="images/icons/play.png" id="pd5">
+                                        </div>
+                                        
+                                    </div> 
+                                    <a href="audio/What a day_Phil.mp3" download="What a day_Phil.mp3">
+                                        <div class="songs-download">
+                                            <img src="images/icons/downloadb.png" id="pd11">
+                                            <p id="audio-old4" class="hidden">audio/singles/What a day_Phil.mp3</p>
+                                        </div>
+                                    </a>    
+                                    <div class="songs-title">
+                                        <p id="t4">What a day that will be</p>
+                                    </div>
+                                    <div class="songs-sub">
+                                        <p id="s4">Sis Phil O ● Released</p>
+                                    </div>   
+                                    <div class="songs-play-anime" id="playanime4">
+                                        <img src="images/icons/playing.gif">
+                                    </div>
+                                </div>
+
+                                <div class="songs" onclick="CA5()">
+                                    <div class="songs-art">
+                                        <img src="images/albums/static/4.jpg" id="album-old5">
+                                        <div class="songs-pb">
+                                            <img src="images/icons/play.png" id="pd6">
+                                        </div>
+                                        
+                                    </div> 
+                                    <a href="audio/Land-of-cloudless-day.mp3" download="Land-of-cloudless-day.mp3">
+                                        <div class="songs-download">
+                                            <img src="images/icons/downloadb.png" id="pd12">
+                                            <p id="audio-old5" class="hidden">audio/at the cross/Land-of-cloudless-day.mp3</p>
+                                        </div>
+                                    </a>
+                                    <div class="songs-title">
+                                        <p id="t5">The land of cloudless day</p>
+                                    </div>
+                                    <div class="songs-sub">
+                                        <p id="s5">Bro Lee ● Released</p>
+                                    </div>   
+                                    <div class="songs-play-anime" id="playanime5">
+                                        <img src="images/icons/playing.gif">
+                                    </div>
+                                </div>
+
+                                <div class="songs" onclick="CA6()">
+                                    <div class="songs-art">
+                                        <img src="images/albums/static/8.jpg" id="album-old6">
+                                        <div class="songs-pb">
+                                            <img src="images/icons/play.png" id="pd7">
+                                        </div>
+                                        
+                                    </div> 
+                                    <a href="audio/Long black train.mp3" download="Long black train.mp3">
+                                        <div class="songs-download">
+                                            <img src="images/icons/downloadb.png" id="pd13">
+                                            <p id="audio-old6" class="hidden">audio/singles/Long black train.mp3</p>
+                                        </div>
+                                    </a>
+                                    <div class="songs-title">
+                                        <p id="t6">The long black Train</p>
+                                    </div>
+                                    <div class="songs-sub">
+                                        <p id="s6">Bro Tumaini ● Unreleased</p>
+                                    </div>   
+                                    <div class="songs-play-anime" id="playanime6">
+                                        <img src="images/icons/playing.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <a href="#albums"><button class="songs-more-btn">View More</button></a>
+                            
+                            <!-- Player -->
+                            <!--
+                            <div class="player-cont">
+                                <div class="album">
+                                    <img src="images/albums/static/disk.png" alt="album">
+                                </div>
+                                <div class="player-div">
+                                    <div class="player-title">
+                                        <p id="p-title">Title</p>
+                                    </div>
+                                    <div class="player-sub">
+                                        <p id="p-sub">Sub</p> 
+                                     </div>
+                                    <audio src="" controls></audio>
+                                        
+                                </div>
+                            </div>
+                        -->
+                           
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- Top videos-->
+                <div class="home-box" id="hb-2">
+                    <h1>Top Videos</h1>
+                    <div class="videosh-cont">
+                        <div class="videoh-cont-flex">
+                            <div class="videosh-flexed" id="vh1">
+                                <p>‹</p>
+                            </div>
+                            <div class="videosh-flexed" id="vh2">
+                                <div class="videosh-scroll">
+                                    <div class="videosh-tile">
+                                        <img class="topvids" src="images/albums/a-1.gif" id="vhnd1">
+                                    </div>
+                                    <div class="videosh-tile">
+                                        <img class="topvids" src="images/albums/a.gif" id="vhnd2">
+                                    </div>
+                                    <div class="videosh-tile" id="videosh-tile-2last">
+                                        <img class="topvids" src="images/albums/a-5.gif" id="vhnd3">
+                                    </div>
+                                    <div class="videosh-tile" id="videosh-tile-last">
+                                        <img class="topvids" src="images/albums/a-4.gif" id="vhnd4">
+                                    </div>
+                                </div>                            
+
+                            </div>
+                            <div class="videosh-flexed" id="vh3">
+                                <p>›</p>
+                            </div>
+                        </div>
+                        <hr style="width: 40%;border: 1px solid rgba(158, 158, 158, 0.24);">
+                        <div class="quote">
+                            <p class="qpt">I’ve always said, “When I get to heaven,
+                                I sure want to get around where there’s singing.
+                            </p>
+                            <p class="qps">
+                                <b><a href="">54 - 0720 e - william Branham</a></b>
+                            </p>
+                            <hr style="width: 55%;border: 1px solid rgba(145, 145, 145, 0.24);">
+                        </div>
+
+                    
+                    </div>
+                    
+                </div>
+                <!--    Support us button
+                    <div class="support-btn-cont">
+
+                    </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!--  Albums section    ______________________________________-->
+    <section id="albums">
+        <div class="albums-cont">
+            <h2> Albums and singles</h2>
+            <div class="albums-flex">
+                <div class="albums-2-flexed">
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont" >
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic" >
+                                        <img id="albumpic1" src="images/albums/static/hd/Only believe album art.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>Only believe</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic2" src="images/albums/static/hd/Picture3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>It is no secret</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="albums-2-flexed">
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic3" src="images/albums/static/hd/at the cross.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>At the cross</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic4" src="images/albums/static/hd/Angel band.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>Angel band</h3>
+                            </div>
+                        </div>
+
+                    </div>             
+                </div>
+                
+            </div>
+
+            <div class="albums-flex">
+                <div class="albums-2-flexed">
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic5" src="images/albums/static/hd/remind me.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>Remind me</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic6" src="images/albums/static/hd/MERCY.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>Mercy Worth</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="albums-2-flexed">
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic7" src="images/albums/static/hd/singles.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>Singles</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="albums-flexed">
+                        <div class="albums-songs-cont">
+                            <div class="albums-songs-scroll">
+                                <div class="albums-album-cont">
+                                    <div class="album-disk">
+                                        
+                                    </div>
+                                    <div class="album-pic">
+                                        <img id="albumpic8" src="images/albums/static/hd/coming soon.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="albums-bottom-label">
+                                <h3>Coming soon</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--  Artists section   _____________________________________ -->
+    <section id="artists">
+        <div class="artist-cont">
+            <h1>- Artists -</h1>
+            <div class="artist-flex">
+
+                <div class="artist-flexed-cont">
+                    <div class="artist-flexed">
+                        <div class="artist">
+                            <img id="philly" class="icon" src="images/artists/phil.png">
+                        </div>
+                        <div class="artisttitle">
+                                <h3>Philly Odero </h3>
+                        </div>
+                        <div class="artist-country">
+                            <img class="icon" src="images/artists/KENYA-FLAG.png">
+                        </div>
+                        <div class="artist-c-title">Kenya</div>
+                        <hr id="artisthr">
+                        <div class="artist-social-cont">
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/facebook.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/youtube.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/ig.png"></a></div>
+                        </div>
+                    </div>
+                    
+                    <div class="artist-flexed">
+                        <div class="artist">
+                            <img id="tumaini" class="icon" src="images/artists/tuma.png">
+                        </div>
+                        <div class="artisttitle">
+                                <h3>Tumaini Joshua </h3>
+                        </div>
+                        <div class="artist-country">
+                            <img class="icon" src="images/artists/KENYA-FLAG.png">
+                        </div>
+                        <div class="artist-c-title">Kenya</div>
+                        <hr id="artisthr">
+                        <div class="artist-social-cont">
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/facebook.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/youtube.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/ig.png"></a></div>
+                        </div>
+                    </div>                 
+                    
+                    
+                </div>
+                <div class="artist-flexed-cont">
+                    <div class="artist-flexed">
+                        <div class="artist">
+                            <img id="jevy" class="icon" src="images/artists/jevy.png">
+                        </div>
+                        <div class="artisttitle">
+                                <h3>Jevanice Gracie </h3>
+                        </div>
+                        <div class="artist-country">
+                            <img class="icon" src="images/artists/UGANDA-FLAG.png">
+                        </div>
+                        <div class="artist-c-title">Uganda</div>
+                        <hr id="artisthr">
+                        <div class="artist-social-cont">
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/facebook.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/youtube.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/ig.png"></a></div>
+                        </div>
+                    </div>
+
+                    <div class="artist-flexed">
+                        <div class="artist">
+                            <img id="artist1" class="icon" src="images/artists/albert.png">
+                        </div>
+                        <div class="artisttitle">
+                                <h3>Albert Gitau </h3>
+                        </div>
+                        <div class="artist-country">
+                            <img class="icon" src="images/artists/KENYA-FLAG.png">
+                        </div>
+                        <div class="artist-c-title">Kenya</div>
+                        <hr id="artisthr">
+                        <div class="artist-social-cont">
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/facebook.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/youtube.png"></a></div>
+                            <div class="artist-social"><a href="https://youtube.com/@broleemusic" target="_blank"><img class="icon" src="images/icons/ig.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="artist-flex">
+
+                <div class="artist-flexed-cont">
+                    <div class="artist-flexed">
+                        
+                    </div>
+                    <div class="artist-flexed">
+                        
+                    </div>
+                    
+                </div>
+                <div class="artist-flexed-cont">
+                    <div class="artist-flexed">
+                        
+                    </div>
+                    <div class="artist-flexed">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="artist-flex">
+
+                <div class="artist-flexed-cont">
+                    <div class="artist-flexed">
+                        
+                    </div>
+                    <div class="artist-flexed">
+                        
+                    </div>
+                    
+                </div>
+                <div class="artist-flexed-cont">
+                    <div class="artist-flexed">
+                        
+                    </div>
+                    <div class="artist-flexed">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!--  videos section    _____________________________________-->
+    <section id="videos">
+        <div class="videos-cont">
+            <div id="videos-flexed1" class="videos-flexed">
+                <div class="video-div">
+                    <div class="video-cont">
+                        <video id="video" controls controlslist="nodownload" src=""></video>
+                    </div>
+                </div>
+                <div class="video-details-cont">
+                    <div class="video-details">
+                        <div class="videotitle">
+                            <div class="video-title1">
+                                <h3 id="videotitle">Title</h3>
+                            </div>
+                            
+                            <div class="video-title2">
+                                <div id="videodownloadbtnclick" class="video-download">
+                                    <a id="videodownloadlink" href="" download=""></a>
+                                    <img id="videodownloadbtn" class="icon" src="images/icons/download.png">
+                                </a>
+                                </div>
+                                <div class="video-download-text">Download</div> 
+                            </div>
+                                                       
+                        </div>
+                        <div class="video-widgets">
+                            <div class="video-artist"><a href="#artists"><img id="videoartist" class="icon" src="images/icons/favicon.ico"></a></div>
+                            <div id="videoartisttitle" class="video-widgets-artist">Artists</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="videos-flexed2" class="videos-flexed">
+                <div class="thumb-flex">
+                    <div id="vid1" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/The goodness of God.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid1title" class="thumb-text">The goodness of God by jevy and bro lee</div>
+                            <div class="thumb-artist"><img id="vid1artist" class="icon" src="images/artists/jevy.png"></div>
+                            <div id="vid1artisttitle" class="thumb-artist-text">Jevanice Gracie, Leevayle</div>
+                        </div>                        
+                    </div>
+                    <div id="vid2" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/seek ye first the kingdom.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid2title" class="thumb-text">Seek ye first the kingdom of God by Bro David</div>
+                            <div class="thumb-artist"><img id="vid2artist" class="icon" src="images/artists/DAVY.jpg"></div>
+                            <div id="vid2artisttitle" class="thumb-artist-text">Bro David</div>
+                        </div>                        
+                    </div>                    
+                                       
+                </div>
+                <div class="thumb-flex">
+                    <div id="vid3" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/what a day.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid3title" class="thumb-text">What a day that will be when my Jesus i shall see</div>
+                            <div class="thumb-artist"><img id="vid3artist" class="icon" src="images/artists/phil.png"></div>
+                            <div id="vid3artisttitle" class="thumb-artist-text">Sis Philly</div>
+                        </div>                        
+                    </div>
+                    <div id="vid4" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/you are my all in all thumbnail.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid4title" class="thumb-text">You are my all in all Sis Hope, Sis Gladys +</div>
+                            <div class="thumb-artist"><img id="vid4artist" class="icon" src="images/artists/hope.jpg"></div>
+                            <div id="vid4artisttitle" class="thumb-artist-text">Sis Hope, Gladys<br/>Bro Albert, Bro Lee</div>
+                        </div>                        
+                    </div>                    
+                                       
+                </div> 
+                <div class="thumb-flex">
+                    <div id="vid5" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/When i survey the cross.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid5title" class="thumb-text">When i survey the wondrous cross by bro Albert</div>
+                            <div class="thumb-artist"><img id="vid5artist" class="icon" src="images/artists/albert.png"></div>
+                            <div id="vid5artisttitle" class="thumb-artist-text">Bro Albert</div>
+                        </div>                        
+                    </div>
+                    <div id="vid6" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/There is a fountain.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid6title" class="thumb-text">There is a fountain filled with blood by Saints</div>
+                            <div class="thumb-artist"><img id="vid6artist" class="icon" src="images/artists/jevy.png"></div>
+                            <div id="vid6artisttitle" class="thumb-artist-text">Jevanice gracie Philly,Naomi&Esther</div>
+                        </div>                        
+                    </div>                    
+                                       
+                </div>
+                <div class="thumb-flex">
+                    <div id="vid7" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/this is she thumbnail.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid7title" class="thumb-text">Are you she, the bride of the last days</div>
+                            <div class="thumb-artist"><img id="vid7artist" class="icon" src="images/artists/phil.png"></div>
+                            <div id="vid7artisttitle" class="thumb-artist-text">Sis Phil, Sis Faith,<br />  Bro Tumaini, Bro lee</div>
+                        </div>                        
+                    </div>
+                    <div id="vid8" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/ucio.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid8title" class="thumb-text">Jesus the lion of Judea - Kikuyu version</div>
+                            <div class="thumb-artist"><img id="vid8artist" class="icon" src="images/artists/MERCY.jpg"></div>
+                            <div id="vid8artisttitle" class="thumb-artist-text">Mercy worth</div>
+                        </div>                        
+                    </div>                    
+                                       
+                </div>
+                <div class="thumb-flex">
+                    <div id="vid9" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/all is well.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid9title" class="thumb-text">All is well, we have heard the message shalom</div>
+                            <div class="thumb-artist"><img id="vid9artist" class="icon" src="images/artists/FAITH.jpg"></div>
+                            <div id="vid9artisttitle" class="thumb-artist-text">Sis Faith, Phil<br />Bro Leevayle</div>
+                        </div>                        
+                    </div>
+                    <div id="vid10" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/lcd.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid10title" class="thumb-text">The land of a cloudless day bro leevayle</div>
+                            <div class="thumb-artist"><img id="vid10artist" class="icon" src="images/artists/lee.png"></div>
+                            <div id="vid10artisttitle" class="thumb-artist-text">Bro Leevayle</div>
+                        </div>                        
+                    </div>                    
+                                       
+                </div>  
+                
+                <div class="thumb-flex">
+                    <div id="vid11" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/coat of many colors.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid11title" class="thumb-text">My coat of many colors Mercy Worth</div>
+                            <div class="thumb-artist"><img id="vid11artist" class="icon" src="images/artists/MERCY.jpg"></div>
+                            <div id="vid11artisttitle" class="thumb-artist-text">Mercy Worth</div>
+                        </div>                        
+                    </div>
+                    
+                    <div id="vid12" class="thumb-flex-cont">
+                        <div class="thumb-holder">
+                            <img class="icon" src="images/thumbnails/in christ alone thumbnail.jpg">
+                        </div>
+                        <div class="thumb-title">
+                            <div id="vid12title" class="thumb-text">In Christ alone my hope is found Lee, Philly & Tumaini</div>
+                            <div class="thumb-artist"><img id="vid12artist" class="icon" src="images/artists/lee.png"></div>
+                            <div id="vid12artisttitle" class="thumb-artist-text">Bro Leevayle<br/>Phil, Tumaini</div>
+                        </div>                        
+                    </div>                 
+                                       
+                </div>               
+                
+            </div>
+
+            
+        </div>
+        
+    </section>
+
+    <!--    DOWNLOADS SECTION  _________________________________-->
+    <section id="downloads">
+        <h1>Download Bro Lee Music App</h2>
+        <div class="downloads-cont">
+            <div class="downloads-flexed" id="forandroid" onclick="ComingSoon()">
+                <div class="download-img">
+                    <img src="images/icons/new/android green.png">
+                </div>
+                <div class="download-title">
+                    Get it for  Android
+                </div>
+            </div>
+            <div class="downloads-flexed" id="forpc" onclick="ComingSoon()">
+                <div class="download-img">
+                    <img src="images/icons/new/windows blue.png">
+                </div>
+                <div class="download-title">
+                    Get it for Pc
+                </div>
+            </div>
+            <div class="downloads-flexed" id="formac" onclick="ComingSoon()">
+                <div class="download-img">
+                    <img src="images/icons/new/apple (4).png">
+                </div>
+                <div class="download-title">
+                    Get it for mac
+                </div>
+            </div>
+        </div>
+        <div class="download-bottom-text">
+            <h3>Other Versions like Linux and apple coming soon.</h3>
+        </div>
+    </section>        
+
+    <!--  support us section    -->
+    <section id="support">
+
+        <p style="height: 300px;">Support</p>
+    </section>
+
+    <!--  contact us section    -->
+    <section id="contact">
+
+        <p style="height: 300px;">Contact</p>
+    </section>        
+
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="f">
+            <div class="cont" id="footrt-cont">
+                <div id="w-33" class="fbox">
+
+                    <div class="ftext">
+                       <p><a href="" target="_blank">Terms and conditions</a><br></p>
+                       <p> <a href="">Privacy policy</a><br></p>
+                        <a href="" target="_blank">End user agreement</a><br>           
+                    </div>
+                    
+                </div>
+                <div id="w-23-1" class="fbox" >
+                    
+                    <hr>
+                    <a href="https://www.facebook.com/BroLeeMusic/" target="_blank"><button class="fb">Facebook</button></a>
+                    <p class="yp">Our Facebook page</p>
+                </div>
+                <div id="w-23-2" class="fbox" >
+
+                    <hr>
+                    <a href="https://www.youtube.com/@broleemusic" target="_blank"><button class="yt">YouTube</button></a>
+                    <p class="yp">Our Music Channel</p>
+                </div>
+                <div id="w-23-3" class="fbox" >
+
+                    <hr>
+                    <a href="#"><button class="whatsapp">Whatsapp</button></a>
+                    <p class="yp">Our Whatsapp number</p>
+                </div>
+
+            </div>
+            
+
+            <div class="f-box" id="footer-copyright">
+                <div style="margin-left: auto;margin-right: auto;">
+                <p style="color: rgb(98, 119, 138);width: 100%;text-align: center;"> © - bro lee music | 2023  Version 1.0</p>
+                </div>    
+            </div>
+            
+            
+        </div>
+        
+
+    </section>
+
+</body>
+    <!--     scripts   -->
+    <script src="javascript/action.js" defer></script>
+    <script src="javascript/loading.js" defer></script>
+    <script src="javascript/audio-video.js" defer></script>
+</html>

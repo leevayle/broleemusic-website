@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/l.css">
+    <style>
+        body{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #button:hover{
+            background-color: grey;
+            cursor: pointer;
+        }
+        .blur-back{
+            text-align: center;
+            display: inline-block;
+        }
+        h1{
+            margin-left: auto;
+            margin-right: auto; 
+            margin-top: 180px;
+            text-align: center;
+            font-family: 'cocomat',sans-serif;
+            font-size: 40px;
+
+        }
+        @media screen  and (max-width:435px) {
+            h1{
+                margin: 40px;
+                margin-top: 100px;
+                margin-bottom: 60px;
+                font-size: 30px;
+            }
+            .bg{
+                height: auto;
+            }
+            .blur-back{
+                height: 700px;
+            }
+        }
+    </style>
+    <link rel="icon" href="images/icons/favicon.ico">
+    <title>Bro lee music 404</title>
+</head>
+<body>
+    
+    <nav>
+        <img src="images/icons/2.png" alt="logo" id="pd1"> <!--The bro lee music logo-->
+        <a href="home.html"> Home page </a>
+        
+        <!--Theme checkbox-->
+        <div class="checkbox-box" id="pc-theme">
+            <div class="checkbox-wrapper-64">
+                <label class="switch">                    
+                <input type="checkbox" id="themes" onchange="">
+                <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+    </nav>
+<section>
+    <div class="bg">
+        <div class="blur-back">
+            <h1>Oops! Page does not exist</h1>
+            <div style="display: block;width: 100%;height: auto;">
+            <a href="home.html"><button id="button" style="width: 190px;height: 60px;margin-bottom:5px;margin-top:5px; margin-left:auto;margin-right: auto;border-radius: 20px;border: 1px solid rgb(255, 255, 255);background:transparent;font-family: 'cocomat',sans-serif;font-size: 20px;color: rgb(0, 0, 0);">Home Page</button>
+            </a></div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

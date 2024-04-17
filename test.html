@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .div1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: flex;width: 100%;height: auto;background-color: rgb(224, 224, 224);
+        }
+        .div1a{
+            
+            position: absolute;
+            bottom: 100px;
+            left: 0px;
+            display: flex;width: 100%;height: auto;background-color: rgb(224, 224, 224);
+        }
+        .div2{
+            width: 30%;
+            border:1px solid grey;
+            margin: auto;
+            height: 50%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        button{
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2"><button id="vh1">Prev</button></div>
+        <div class="div2"><img id="vhnd1" src="images/albums/a-4.gif"></div>
+        <div class="div2"><button id="vh3">Next</button></div>
+    </div>
+    <div class="div1a">
+    <audio id="audio" controls src="audio/it is no seccret/Because he lives.mp3"></audio>
+</div>
+</body>
+<script>
+    //Top videos handler
+const img = document.getElementById('vhnd1');
+const prev = document.getElementById('vh1');
+const next = document.getElementById('vh3');
+var audio = document.getElementById('audio');
+
+const i0 = 'images/albums/a.gif';
+const i1 = 'images/albums/a-1.gif';
+const i2 = 'images/albums/a-2.gif';
+const i3 = 'images/albums/a-3.gif';
+const i4 = 'images/albums/a-4.gif';
+const i5 = 'images/albums/a-5.gif';
+const i6 = 'images/albums/a-6.gif';
+const i7 = 'images/albums/a-7.gif';
+const i8 = 'images/albums/a-8.gif';
+
+var a1 = 'audio/it is no seccret/Because he lives.mp3';
+const a2 = 'audio/it is no seccret/Ancient words.mp3';
+
+function NextImg(){
+
+        var a = audio.src;
+        if(a1===a){
+            console.log('equal');
+        }else{
+            console.log('!equal');
+        }
+    
+};
+
+function PrevImg(){
+};
+
+next.addEventListener('click',()=>{
+    NextImg();
+});
+
+prev.addEventListener('click',()=>{
+    console.log('Prev');
+    PrevImg();
+});
+</script>
+</html>

@@ -1,0 +1,84 @@
+/*_______________FONTS____________*/
+
+/*__________________________________________________cocomat*/
+/*    cocomat        */
+
+@font-face {
+    font-family: 'cocomat';
+    src: url('../fonts/cocomat.ttf') format('truetype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+/*__________________________________________________corbel*/
+/*     corbel       */
+
+@font-face {
+    font-family: corbel;
+    src: url('../fonts/corbel.ttf') format('truetype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+/*     corbel bold      */
+
+@font-face {
+    font-family: corbel;
+    src: url('../fonts/corbelb.ttf') format('truetype');
+
+    font-style: normal;
+    font-weight: bold;
+}
+/*     corbel italic      */
+
+@font-face {
+    font-family: corbel;
+    src: url('../fonts/corbeli.ttf') format('truetype');
+
+    font-style: italic;
+}
+
+/*__________________________________________________goudos*/
+/*     goudosi italic      */
+
+@font-face {
+    font-family: goudos;
+    src: url('../fonts/GOUDOSI.TTF') format('truetype');
+
+    font-style: italic;
+}
+/*     goudosi bold      */
+
+@font-face {
+    font-family: goudos;
+    src: url('../fonts/GOUDOSB.TTF') format('truetype');
+
+    font-weight: bold;
+}
+/*__________________________________________________corbel*/
+/*     junegull      */
+
+@font-face {
+    font-family: junegull;
+    src: url('../fonts/junegull.ttf') format('truetype');
+
+    font-weight: bold;
+}
+/*    Berlin sans Fb        */
+
+@font-face {
+    font-family: Berlin sans Fb;
+    src: url('../fonts/BRLNSR.TTF') format('truetype');
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*  republica*/
+@font-face {
+    font-family: republica;
+    src: url('../fonts/Enter\ Sansman\ Bold.ttf');
+
+    font-weight: bold;
+}
+/*  leevayle@protonmail.com   */
